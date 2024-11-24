@@ -7,8 +7,9 @@ const App = () => {
   let [sum,setSum] = useState(0);
   return (
     <div>
+      <h1>Sum Calculator</h1>
       <input type="number" onChange={(e)=>setSum(sum+ +(e.target.value))}/>
-      <h1>{sum}</h1>
+      <p>{sum}</p>
         {/* Do not remove the main div */}
     </div>
   )
